@@ -72,7 +72,7 @@ cd node
 
 ### Copy .env.example to .env
 
-Make a copy of `.env.example` named `.env`.
+Make a copy of `.env.example` named `.env`, `.local.env`.
 
 ```sh
 cp .env.example .env
