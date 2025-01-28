@@ -78,7 +78,6 @@ Make a copy of `.env.example` named `.env`, `.local.env`.
 cp .env.example .env
 ```
 
-Open `.env` with your editor of choice
 
 ### Mandatory configurations
 
