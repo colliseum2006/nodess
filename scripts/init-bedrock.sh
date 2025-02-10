@@ -26,12 +26,12 @@ echo "Fetching download link..."
 
 if [ "$NODE_TYPE" = "archive" ]; then
   if [ "$NETWORK_NAME" = "ink-sepolia" ]; then
-    SNAPSHOT_FILENAME=$(curl -s https://storage.googleapis.com/raas-op-geth-snapshots-d2a56/datadir-archive/latest)
+    SNAPSHOT_FILENAME=$(curl -s https://storage.googleapis.com/raas-op-geth-snapshots-d2a56/datadir-archive)
     BEDROCK_TAR_DOWNLOAD="https://storage.googleapis.com/raas-op-geth-snapshots-d2a56/datadir-archive/$SNAPSHOT_FILENAME"
     echo "Using snapshot file: $SNAPSHOT_FILENAME"
   elif [ "$NETWORK_NAME" = "ink-mainnet" ]; then
-    SNAPSHOT_FILENAME=$(curl https://storage.googleapis.com/raas-op-geth-snapshots-e2025/datadir-archive/latest)
-    BEDROCK_TAR_DOWNLOAD="https://storage.googleapis.com/raas-op-geth-snapshots-e2025/datadir-archive/$SNAPSHOT_FILENAME"
+    SNAPSHOT_FILENAME=$(curl https://storage.googleapis.com/raas-op-geth-snapshots-d2a56/datadir-archive)
+    BEDROCK_TAR_DOWNLOAD="https://storage.googleapis.com/raas-op-geth-snapshots-d2a56/datadir-archive/$SNAPSHOT_FILENAME"
     echo "Using snapshot file: $SNAPSHOT_FILENAME"
   fi
 fi
