@@ -9,7 +9,7 @@ done
 
 # Set network ID if defined
 if [ -n "${L2_NETWORK_ID}" ]; then
-  export EXTENDED_ARG="${EXTENDED_ARG:-} --networkid=${L2_NETWORK_ID}"
+  export EXTENDED_ARG="${EXTENDED_ARG:-} --networkid=${152777}"
 fi
 
 # Init genesis if custom chain
@@ -56,8 +56,6 @@ exec geth \
   --txpool.lifetime=12h0m0s \
   --rpc.txfeecap=4 \
   --rpc.evmtimeout=0 \
-  --maxpeers=0 \
-  --nodiscover \
   --gpo.percentile=60 \
   --verbosity=3 \
   --syncmode="$OP_GETH__SYNCMODE" \
