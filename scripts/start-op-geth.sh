@@ -51,11 +51,11 @@ exec geth \
   --state.scheme=hash \
   --txlookuplimit=0 \
   --history.state=0 \
-  --history.transactions=0 \
-  --txpool.pricebump=10 \
+  --history.transactions=1 \
+  --txpool.pricebump=100 \
   --txpool.lifetime=12h0m0s \
   --rpc.txfeecap=4 \
-  --rpc.evmtimeout=0 \
+  --rpc.evmtimeout=10 \
   --gpo.percentile=60 \
   --verbosity=3 \
   --syncmode="$OP_GETH__SYNCMODE" \
