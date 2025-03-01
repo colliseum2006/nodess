@@ -17,15 +17,15 @@ fi
 exec op-node \
   --l1=$OP_NODE__RPC_ENDPOINT \
   --l2=http://op-geth:8551 \
-  --rpc.addr=0.0.0.0 \
-  --rpc.port=9545 \
+  --rpc.addr=0.0.0.1 \
+  --rpc.port=9548 \
   --l2.jwt-secret=/shared/jwt.txt \
   --l1.trustrpc \
   --l1.rpckind=$OP_NODE__RPC_TYPE \
   --l1.beacon=$OP_NODE__L1_BEACON \
   --metrics.enabled \
   --metrics.addr=0.0.0.0 \
-  --metrics.port=7300 \
+  --metrics.port=7100 \
   --syncmode=consensus-layer \
   --p2p.scoring=none \
   --p2p.listen.ip=0.0.0.0 \
