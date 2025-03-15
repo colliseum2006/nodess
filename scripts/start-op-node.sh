@@ -8,7 +8,7 @@ while [ ! -f /shared/initialized.txt ]; do
 done
 
 if [ -n "${IS_CUSTOM_CHAIN}" ]; then
-  export EXTENDED_ARG="${EXTENDED_ARG:-} --rollup.config=/chainconfig/rollup.json"
+  export EXTENDED_ARG="${EXTENDED_ARG:-} --rollup.config=/chainconfig/done.json"
 else
   export EXTENDED_ARG="${EXTENDED_ARG:-} --network=$NETWORK_NAME --rollup.load-protocol-versions=true --rollup.halt=major"
 fi
