@@ -17,9 +17,9 @@
     }
   },
   "block_time": 1,
-  "delta_time": 0,
-  "fjord_time": 0,
-  "canyon_time": 0,
+  "delta_time": 1,
+  "fjord_time": 1,
+  "canyon_time": 1,
   "l1_chain_id": 11155111,
   "l2_chain_id": 763373,
   "ecotone_time": 0,
